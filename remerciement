@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci ! | Virtuos</title>
+    <!-- On réutilise les mêmes polices et styles pour une cohérence visuelle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007A7A;
+            --dark-color: #2c3e50;
+            --light-color: #ffffff;
+            --text-color: #5a6a78;
+            --heading-font: 'Poppins', sans-serif;
+            --body-font: 'Poppins', sans-serif;
+        }
+        body {
+            font-family: var(--body-font);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #f0f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+        }
+        h1 {
+            font-family: var(--heading-font);
+            color: var(--dark-color);
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--primary-color);
+            color: var(--light-color);
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #005f5f;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Merci pour votre intérêt !</h1>
+        <p>Votre demande a bien été enregistrée. Nous vous contacterons très prochainement pour la démo.</p>
+        <p>Pour nous aider à créer le meilleur produit pour vous, pourriez-vous prendre une minute pour répondre à notre sondage ?</p>
+        <a href="https://docs.google.com/forms/d/1OqQ88ICI4xYMvNmxOrImAs0MF9EEZa2iV_DZE3igvj0/edit" target="_blank" class="btn">Répondre au sondage</a>
+    </div>
+</body>
+</html>
