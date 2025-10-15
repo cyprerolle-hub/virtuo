@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtuos | l'ACV par le jeu </title>
+code
+Code
 <!-- Polices d'écriture inspirées du style moderne -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -248,3 +250,128 @@
     }
 
 </style>
+</head>
+<body>
+code
+Code
+<!-- 1. Barre de Navigation -->
+<header class="main-header">	
+    <div class="container">
+        <a href="#" class="logo">Virtuo</a>
+        <nav>
+            <a href="#cta" class="btn">Accès Anticipé</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- 2. Section Héros : L'Accroche -->
+    <section id="hero" class="section-light">
+        <div class="container">
+            <h1>Maîtrisez l'Analyse du Cycle de Vie par le Jeu</h1>
+            <p class="subtitle">Découvrez notre serious game et transformez une méthodologie complexe en une expérience d'apprentissage interactive et engageante pour vos équipes.</p>
+	<div class="hero-content">
+            	<nav>
+	   	   <a href="#cta" class="btn">Recevoir une démo en avant-première</a>
+		</nav>
+	</div>
+        </div>
+    </section>
+
+    <!-- 3. Le Problème -->
+    <section id="probleme" class="section-colored">
+        <div class="container">
+            <h2>L'Analyse du Cycle de Vie : Un Défi pour vos Équipes ?</h2>
+            <div class="grid-3">
+                <div class="grid-item">
+                    <i class="bi bi-book"></i>
+                    <h3>Complexité Abstraite</h3>
+                    <p>Les normes et la méthodologie ACV sont souvent perçues comme denses et difficiles à appliquer concrètement.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="bi bi-graph-down"></i>
+                    <h3>Engagement Faible</h3>
+                    <p>Les formations traditionnelles peinent à captiver et à motiver les collaborateurs sur ce sujet technique mais essentiel.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="bi bi-clock-history"></i>
+                    <h3>Temps et Coûts Élevés</h3>
+                    <p>Organiser des sessions de formation approfondies représente un investissement important pour l'entreprise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. La Solution : Votre Serious Game -->
+    <section id="solution" class="section-light">
+        <div class="container">
+            <h2>La Solution : Une Formation Immersive et Efficace</h2>
+             <div class="grid-3">
+                <div class="grid-item">
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                    <h3>Apprentissage Accéléré</h3>
+                    <p>Assimilez les concepts clés de l'ACV de manière intuitive grâce à des scénarios réalistes et des feedbacks instantanés.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="bi bi-controller"></i>
+                    <h3>Engagement Maximal</h3>
+                    <p>Motivez vos équipes grâce à une approche ludique qui favorise la collaboration, la compétition et la rétention des connaissances.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="bi bi-bullseye"></i>
+                    <h3>Mise en Pratique Directe</h3>
+                    <p>Prenez des décisions virtuelles et visualisez immédiatement leurs impacts environnementaux, sociaux et économiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Comment ça marche ? -->
+    <section id="fonctionnement" class="section-colored">
+        <div class="container">
+            <h2>Une Prise en Main Simple en 3 Étapes</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Définissez votre Projet</h3>
+                    <p>Choisissez un produit et fixez les objectifs et le périmètre de votre analyse dans un cadre de jeu guidé.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Analysez le Cycle de Vie</h3>
+                    <p>Collectez les données à chaque étape, de l'extraction des matières premières à la fin de vie, via des modules interactifs.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Évaluez et Décidez</h3>
+                    <p>Interprétez les résultats, identifiez les "hotspots" d'impact et prenez les meilleures décisions pour optimiser votre produit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 6. Appel à l'Action Final -->
+    <section id="cta" class="section-light">
+        <div class="container">
+            <h2>Prêt à Révolutionner votre Approche de l'ACV ?</h2>
+            <p>Laissez-nous votre email pour être le premier informé du lancement et recevoir un accès exclusif à notre démo.</p>
+            
+            <!-- Formulaire Netlify -->
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="Votre prénom" required />
+                <input type="email" name="email" placeholder="Votre email professionnel" required />
+                <input type="text" name="company" placeholder="Nom de votre entreprise" />
+                <button type="submit" class="btn">Je veux ma démo</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- 7. Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 ACV Game | Un projet pour un avenir durable. | <a href="#">Mentions Légales</a></p>
+    </div>
+</footer>
+</body>
+</html>
