@@ -25,6 +25,7 @@
         --heading-font: 'Poppins', sans-serif;
         --body-font: 'Poppins', sans-serif;
     }
+	
 
     /* --- RESET ET STYLES GLOBAUX --- */
     * {
@@ -110,6 +111,83 @@
         color: var(--dark-color);
         text-decoration: none;
     }
+	
+#hero {
+    /* On enlève l'ancienne image de fond et la couleur du texte */
+    background-image: none;
+    color: var(--text-color);
+    /* On s'assure que le contenu est bien centré verticalement */
+    display: flex;
+    align-items: center;
+    padding: 60px 0; /* On ajuste le padding */
+}
+
+/* On supprime la superposition qui n'est plus utile */
+#hero::before {
+    display: none;
+}
+
+/* Le conteneur Flexbox principal */
+.hero-container {
+    display: flex;
+    align-items: center; /* Aligne verticalement le texte et l'image */
+    justify-content: space-between; /* Espace les deux colonnes */
+    gap: 2rem; /* Ajoute un espace de sécurité entre les colonnes */
+}
+
+/* On réinitialise la couleur des titres pour qu'ils soient lisibles */
+#hero h1, #hero .subtitle {
+    color: var(--dark-color);
+    text-align: left; /* On aligne le texte à gauche */
+    margin: 0 0 1.5rem 0;
+}
+
+#hero .subtitle {
+    color: var(--text-color);
+    max-width: 100%;
+}
+
+/* Styles pour la colonne de gauche (texte) */
+.hero-content {
+    flex: 1; /* Permet à cette colonne de prendre 50% de l'espace */
+    padding-right: 2rem; /* Un peu d'air à droite du texte */
+}
+
+/* Styles pour la colonne de droite (image) */
+.hero-image {
+    flex: 1; /* Permet à cette colonne de prendre 50% de l'espace */
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%; /* L'image sera responsive */
+    height: auto;
+    border-radius: 8px; /* Ajoute des coins arrondis pour un look moderne */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Ajoute une ombre subtile */
+}
+
+
+/* --- ADAPTATION RESPONSIVE POUR LA SECTION HÉROS --- */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Les colonnes se placent l'une sous l'autre */
+        text-align: center;
+    }
+    
+    #hero h1, #hero .subtitle {
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 2; /* Le texte passera en deuxième sur mobile */
+        padding-right: 0;
+    }
+
+    .hero-image {
+        order: 1; /* L'image passera en premier sur mobile */
+        margin-bottom: 2rem;
+    }
+}
 
     /* --- SECTION HÉROS --- */
     <!-- 2. Section Héros : L'Accroche -->
@@ -225,6 +303,7 @@
             padding: 50px 0;
         }
     }
+	
 
 </style>
 </head>
