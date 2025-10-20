@@ -112,46 +112,23 @@
     }
 
     /* --- SECTION HÉROS --- */
-    #hero {
-        position: relative; /* NOUVEAU: Nécessaire pour positionner la superposition */
-        text-align: center;
-        padding: 120px 0; /* NOUVEAU: Un peu plus d'espace vertical */
-        color: var(--light-color); /* NOUVEAU: Le texte par défaut sera blanc */
+    <!-- 2. Section Héros : L'Accroche -->
+<section id="hero" class="section-light">
+    <div class="container hero-container">
+        <!-- Colonne de gauche : Contenu texte -->
+        <div class="hero-content">
+            <h1>Maîtrisez l'Analyse du Cycle de Vie par le Jeu</h1>
+            <p class="subtitle">Découvrez notre serious game et transformez une méthodologie complexe en une expérience d'apprentissage interactive et engageante pour vos équipes.</p>
+            <a href="#cta" class="btn">Recevoir une démo en avant-première</a>
+        </div>
         
-        /* NOUVEAU: L'image de fond */
-        background-image: url('fond-site.png');
-        background-size: cover; /* L'image couvre toute la section */
-        background-position: center; /* L'image est centrée */
-    }
-    
-    /* NOUVEAU: Superposition (overlay) pour la lisibilité */
-    #hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1; /* Se place entre le fond et le contenu */
-    }
-
-    /* NOUVEAU: Conteneur pour le contenu textuel du héros */
-    .hero-content {
-        position: relative;
-        z-index: 2; /* S'assure que le contenu est AU-DESSUS de la superposition */
-    }
-
-    #hero h1 {
-        color: var(--dark-color); /* NOUVEAU: Titre en blanc */
-        line-height: 1.3;
-    }
-
-    #hero .subtitle {
-        font-size: 1.2rem;
-        max-width: 700px;
-        margin: 0 auto 2rem auto;
-        color: var(--dark-color); /* NOUVEAU: Sous-titre en blanc légèrement transparent */
-    }
+        <!-- Colonne de droite : Image -->
+        <div class="hero-image">
+            <!-- IMPORTANT : Remplacez ce lien par le chemin vers votre image -->
+            <img src="your-image.png" alt="Illustration du serious game sur l'Analyse du Cycle de Vie">
+        </div>
+    </div>
+</section>
 
     /* --- SECTIONS DE CONTENU --- */
     .section-light {
