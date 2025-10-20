@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtuos | l'ACV par le jeu </title>
-	<link rel="shortcut icon" href="logo_virtuos.png" type="image/png">
+	<link rel="shortcut icon" href="logo_virtuos_bg.png" type="image/png">
 
 
 <!-- Polices d'écriture inspirées du style moderne -->
@@ -107,12 +107,24 @@
     }
 
     .logo {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: var(--dark-color);
-        text-decoration: none;
-    }
-	
+    display: flex;         /* Active Flexbox pour aligner les éléments à l'intérieur */
+    align-items: center;   /* C'est la ligne MAGIQUE : elle centre verticalement l'image et le texte */
+    gap: 10px;             /* Ajoute un petit espace (10px) entre l'image et le texte */
+    
+    /* On garde les styles de texte que vous aviez déjà */
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+/* On contrôle la taille de l'image DANS le logo */
+.logo img {
+    /* Ajustez cette hauteur jusqu'à obtenir la taille parfaite à côté du texte.
+       Une valeur proche de la taille de la police (1.5rem = 24px) est un bon début. */
+    height: 30px; 
+    width: auto; /* Le navigateur calcule la largeur pour garder les proportions */
+}
 #hero {
     /* On enlève l'ancienne image de fond et la couleur du texte */
     background-image: none;
@@ -295,7 +307,10 @@
 <!-- 1. Barre de Navigation -->
 <header class="main-header">	
     <div class="container">
-        <a href="#" class="logo"><img src="logo_virtuos.png" alt="Logo de Virtuos">Virtuo</a>
+        <a href="#" class="logo">
+    		<img src="logo-virtuos.png" alt="Logo de Virtuos">
+    		<span>Virtuos</span> <!-- J'ajoute le texte ici -->
+		</a>
         <nav>
             <a href="#cta" class="btn">Accès Anticipé</a>
         </nav>
