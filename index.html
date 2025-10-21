@@ -18,13 +18,13 @@
 <style>
     /* --- VARIABLES DE STYLE --- */
     :root {
-        --primary-color: #007A7A; /* Un bleu-vert sobre et pro, similaire à Projexion */
-        --secondary-color: #F0F8F8; /* Un fond très clair pour les sections alternées */
-        --dark-color: #2c3e50; /* Texte principal */
-        --light-color: #ffffff;
-        --text-color: #5a6a78;
-        --heading-font: 'Poppins', sans-serif;
-        --body-font: 'Poppins', sans-serif;
+        --primary-color: #8db93a; /* Le vert vif de votre logo */
+    --secondary-color: #f7f9f2; /* Un fond très clair avec une touche de vert */
+    --dark-color: #3b443b; /* Le gris foncé du logo */
+    --light-color: #ffffff;
+    --text-color: #555555; /* Un gris neutre pour le texte courant */
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins', sans-serif;
     }
 	
 
@@ -226,6 +226,11 @@
         color: var(--primary-color);
         margin-bottom: 1rem;
     }
+	
+	/* --- Icônes rouges pour la section Problème --- */
+#probleme .grid-item i {
+    color: #e74c3c; /* Un rouge moderne et visible */
+}
 
     /* --- SECTION "COMMENT ÇA MARCHE" --- */
     .steps-container {
@@ -251,6 +256,17 @@
         margin: 0 auto 1rem auto;
     }
 
+	/* Style pour le texte d'intro de la section Solution */
+.solution-intro-text {
+    max-width: 750px; /* Limite la largeur pour une meilleure lisibilité */
+    margin: 0 auto 3.5rem auto; /* Centre le bloc et ajoute de l'espace en dessous */
+    text-align: center;
+    line-height: 1.8; /* Augmente l'espace entre les lignes */
+    font-size: 1.1rem; /* Rend le texte légèrement plus grand */
+}
+.solution-intro-text p {
+    margin-bottom: 1.5rem; /* Espace entre chaque paragraphe */
+}
     /* --- SECTION CTA & FORMULAIRE --- */
     #cta {
         text-align: center;
@@ -366,11 +382,12 @@
     <section id="solution" class="section-light">
         <div class="container">
             <h2>La Solution : Une Formation Immersive et Efficace</h2>
-			<q>Un jeu qui donne des clés actionnables directement et qui leur permet de comprendre les conséqueces des décisions qu'elles prennent au quotidien </q> 
-			<q>Gérez simultanément :</q>
-			<q>Le Score Environnemental, le Score Social.</q>
-			<q>Votre Économie et vos Revenus récurrents.</q>
-			<q>Le gagnant est celui qui atteint le meilleur Score de Durabilité  prouvant un équilibre parfait du triple bilan.</q>
+			 <!-- Nouveau bloc de texte centré -->
+        <div class="solution-intro-text">
+            <p>Un jeu qui donne des clés actionnables directement et qui vous permet de comprendre les conséquences des décisions que vous prenez au quotidien.</p>
+            <p>Gérez simultanément le Score Environnemental, le Score Social, votre Économie et vos Revenus récurrents.</p>
+            <p><strong>Le gagnant est celui qui atteint le meilleur Score de Durabilité, prouvant un équilibre parfait du triple bilan.</strong></p>
+        </div>
 			
              <div class="grid-3">
                 <div class="grid-item">
